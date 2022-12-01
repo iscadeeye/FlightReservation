@@ -45,12 +45,11 @@ public class TicketReservation {
      * Removes passenger with the given confirmationNumber. Passenger could be
      * in either confirmedList or waitingList. The implementation to remove the
      * passenger should go in removePassenger() method and removePassenger method
-     * will be tested separately by the uploaded test scripts.
+
      * <p>
      * If passenger is in confirmedList, then after removing that passenger, the
      * passenger at the front of waitingList (if not empty) must be moved into
-     * passengerList. Use poll() method (not remove()) to extract the passenger
-     * from waitingList.
+     * passengerList.
      */
     public boolean cancel(String confirmationNumber) {
         Iterator<Passenger> passengerIterator = confirmedList.iterator();
